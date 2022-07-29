@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple example steps.
 - run `npm install`
 - run `npm run build`
 - run `npm start` your default browser should load automatically with the app, if it doesn't do next and final step.
-- Enter `http://localhost:3000/` in your browser
+- Enter `http://localhost:3000/` in your Browser
 
 ### Usage
 
