@@ -16,6 +16,7 @@
 - CSS
 - JavaScript ES6
 - React
+- Redux
 
 ## Getting Started
 
@@ -27,7 +28,7 @@ To get a local copy up and running follow these simple example steps.
 - git
 - Node.js
 - Broswer to Display
-- IDE to run and edit the code
+- VsCode run and edit the code
 
 ### Setup
 
@@ -37,12 +38,14 @@ To get a local copy up and running follow these simple example steps.
 - run `npm install`
 - run `npm run build`
 - run `npm start` your default browser should load automatically with the app, if it doesn't do next and final step.
-- Enter `http://localhost:3000/` in your browser
+- Enter `http://localhost:3000/` in your Browser
 
 ### Usage
 
 - It can be used to display list of books.
 - It can be used to add a book.
+- It can be used to remove books
+- It displays the catagories
 
 ## Author
 

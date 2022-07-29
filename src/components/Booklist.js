@@ -1,43 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux/es/exports';
 import Book from './Book';
 import AddBook from './Addbook';
+import { loadBookThunk } from '../redux/books/books';
 
-class BookList extends React.PureComponent {
-  constructor(props) {
-    super(props);
+const BookList = () => {
+  const books = useSelector((state) => state.books);
 
-    this.state = {
-      books: [
-        {
-          title: 'Dairy of a Wimpy Kid',
-          author: 'Wimpy Kid',
-          id: 1,
-        },
-        {
-          title: 'Lord of The Rings',
-          author: 'J R R Tolkien',
-          id: 2,
-        },
-        {
-          title: 'Harry Potter',
-          author: 'J K Rowling',
-          id: 3,
-        },
-      ],
-    };
-  }
+  const load = useDispatch();
 
-  render = () => {
-    const { books } = this.state;
-    return (
-      <div>
-        {books.map((book) => (
-          <Book key={book.id} title={book.title} author={book.author} />
-        ))}
-        <AddBook />
-      </div>
-    );
-  };
-}
+  useEffect(() => {
+    load(loadBookThunk());
+  }, [load]);
+
+  return (
+    <div>
+      {books.map((book) => (
+        <Book
+          key={book.id}
+          title={book.title}
+          author={book.author}
+          category={book.category}
+          id={book.id}
+        />
+      ))}
+      <AddBook />
+    </div>
+  );
+};
 
 export default BookList;
