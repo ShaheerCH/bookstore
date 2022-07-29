@@ -45,6 +45,7 @@ To get a local copy up and running follow these simple example steps.
 - It can be used to display list of books.
 - It can be used to add a book.
 - It can be used to remove books
+- It displays the catagories
 
 ## Author
 
