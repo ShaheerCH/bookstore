@@ -1,17 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+
 .App {
-  text-align: center;
+  max-width: 87rem;
+  padding: 0 0 52px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav {
+body {
+  background-color: #f5f6fa;
+  font-family: 'Roboto Slab', serif;
+}
+
+.navbar {
   display: flex;
-  justify-content: space-evenly;
-  margin: 30px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
 }
 
-.books {
+.navbar nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar nav h1 {
+  color: #0290ff;
+}
+
+.profile {
+  border: solid 1px #e8e8e8;
+  color: #0290ff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+.book {
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 2.313rem 6.25rem 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-info * {
+  margin: 0;
+}
+
+.category {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  color: #121212;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.375rem;
+}
+
+.author {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.modify {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.modify * {
+  color: #4386bf;
+  font-weight: 300;
+}
+
+.remove {
+  border-left: solid 2px #e8e8e8;
+  border-right: solid 2px #e8e8e8;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.progress {
+  font-size: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  border: 2px solid black;
+  gap: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.progress-info {
+  display: grid;
+}
+
+.spinner {
+  font-size: 50px;
+  color: #0290ff;
+}
+
+.percentage {
+  font-size: 2rem;
+}
+
+.completed {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  color: #121212;
+}
+
+.remove-div {
+  border-left: solid 2px #e8e8e8;
+  padding-left: 50px;
+  margin-right: 40px;
+  font-weight: 300;
+}
+
+button {
+  background-color: #0290ff;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+  border: none;
+  outline: none;
+  width: 11.5rem;
+  height: 2.063rem;
+  border-radius: 3px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.chapter {
+  opacity: 0.5;
+  font-size: 0.813rem;
+  color: #121212;
+}
+
+.form-container {
+  border-top: solid 2px #e8e8e8;
+  margin: 2.313rem 6.25rem 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-container h2 {
+  color: #888;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+}
+
+.form-container form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-container form input {
+  padding: 10px;
+  font-family: inherit;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+}
+
+.form-container form button {
+  width: 100px;
+  font-weight: bold;
+}
+
+.add-book {
+  width: 30.5rem;
   /* stylelint-disable-next-line no-missing-end-of-source-newline */
 }
