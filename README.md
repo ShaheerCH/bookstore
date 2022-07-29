@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 - git
 - Node.js
 - Broswer to Display
-- IDE to run and edit the code
+- VsCode run and edit the code
 
 ### Setup
 
